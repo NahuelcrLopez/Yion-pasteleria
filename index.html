@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yion Pasteleria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../html/css/estilos.css">
+    <meta name="keywords"  content="tortas,postres,dulces,etc.">
+    <meta name="description=" content="Esta pagina pertenece a una pasteleria ubicada en rosario">
+
+    </head>
+ 
+    
+    
+</head>
+    <body class="fondo_gnral">
+    <!-- <section class="container-fluid slider d-flex justify-content-center align-items-center">
+      <h1 class="display-4">bootstrap</h1>
+    </section> -->
+    
+    <header class="header_Container">
+        <nav class="navbar navbar-expand-lg navbar-dark" >
+          <div class="container-fluid">
+             <a class="navbar-brand" >
+            <img  src="../html/img/dolo-logo.png" width="60" height="60" alt="logo"  class="d-inline-block align-top MiLogo">
+            Yion Pasteleria
+          </a>
+            <button class="navbar-toggler col-sm-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center " id="navbarNavDropdown">
+              <ul class="navbar-nav  ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link active"  aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Para regalar.html">Para Regalar</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="budin.html">Budines</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="torta.html">Tortas</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Postres
+                  </a>
+                  <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                    <li class="nav-item"><a class="nav-link dropdown-item" href="postres Veganos.html">Postres Veganos</a></li>
+                    <li class="nav-item"><a class="nav-link dropdown-item" href="PostresNormales.html">Postres Normales</a></li>
+                  </ul>
+                </li>
+                <button type="button" class="btn btn-primary d-flex flex-row justify-content-center" data-toggle="modal" data-target="#exampleModalLong">
+                  Hace tu pedido
+                </button>
+              </ul>
+            </div>
+          </div>
+        </nav>
+   </header>
+
+
+  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Pedido</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">confirmar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      
+
+  <main>
+    
+    <section class="container-fluid">
+        <div > <!--Bloque-->
+        <h1><span> Nuestra Historia</span> </h1>
+        <p class="text-sm-start">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab totam doloremque, animi, reiciendis tempore qui nulla maiores iure exercitationem accusamus suscipit, repellendus atque! Ad quo esse ex dolorum, modi illo.</p> 
+         <!--Aca va el texto-->   
+        <h2><span>La pasion por lo dulce</span></h2>
+        <p class="text-sm-start"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aspernatur sed, ut autem mollitia dolorum libero ducimus perspiciatis fugit est voluptatibus! Animi delectus tenetur laudantium repudiandae, sit provident magni temporibus.</p>
+        <br>
+        <img  class="ImagenText" src="../html/img/intrumentos.jpg" alt="imagen "  width="600px"> 
+        </div>
+    </section>
+    <br>
+        <!--Carrusel-->
+      <div class="carrousel">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img width="300px" src="../html/img/torta.jpg" class="d-block w-100" alt="">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="../html/img/ilustrativa.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="../html/img/postres2.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+        <br>
+      
+         
+      
+
+        <!--.............Inicio de tabla..............-->
+     <h3>Ranking de ventas anuales</h3>
+     <div class="formularioTabla">
+        <table  class="table table-striped table-hover">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">nombre</th>
+              <th scope="col">cantidad/ventas</th>
+              <th scope="col">año</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>torta tofi</td>
+              <td>30</td>
+              <td>2020</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>cake</td>
+              <td>17</td>
+              <td>2019</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>trufas</td>
+              <td>36</td>
+              <td>2018</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <!--...............FORMULARIO...............-->
+      <h3>Formulario de contacto</h3>
+     <form class="container-fluid" > 
+      <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">Nombre y Apellido</label>
+          <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationCustom03" class="form-label">Ciudad</label>
+          <input type="text" class="form-control" id="validationCustom03" required>
+          <div class="invalid-feedback">
+            Por favor ingrese una ciudad.
+          </div>
+          <div class="mb-3">
+            <label for="validationCustom02" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="validationCustom02" placeholder="name@example.com">
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              aceptar terminos y condiciones
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Enviar Formulario</button>
+        </div>
+      </form>
+      
+
+<div class="fondo_gnral footer">
+ 
+            <footer>
+              <p><b>Siguenos en:</b></p>
+                
+                  <a href="" target="_blank"><img src="../html/img/facebook.png" alt="Facebook" class="footer-redes"></a>
+                  <a href="https://www.instagram.com/yionpasteleria/" target="_blank"><img src="../html/img/instagram.png" alt="instagram" class="footer-redes"></a>
+                  <a href="https://tinyurl.com/c3t3xeps" target="_blank"><img src="../html/img/Whatsapp.png" alt="Whatsapp" class="footer-redes"></a>
+                  <a href="https://mail.google.com/mail/u/0/?hl=es-419#inbox "target="_blank"><img src="../html/img/" alt="Correo Electronico" class="footer-redes"></a>
+                
+              <p>Derechos reservados© yion Pasteleria</p>
+            </footer>
+</div>        
+
+          
+   </main>  
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script> 
+   </body>
+ </html>   
