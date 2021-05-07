@@ -4,29 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../html/css/estilos .css">
+    <title>Yion Pasteleria</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/Torta.css">
+
 </head>
 <body class="fondo_gnral">
-  
+  <!-- Seccion de barra de navegacion -->
+
   <header class="header_Container">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+    <nav class="navbar navbar-expand-lg navbar-dark" >
       <div class="container-fluid">
-         <a class="navbar-brand" >
-        <img  src="../html/Multimedia/img/dolo-logo.png" width="60" height="60" alt="logo"  class="d-inline-block align-top MiLogo">
-        Yion Pasteleria
-      </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <a href="index.html" class="navbar-brand" >
+          <img  src="/img/dolo-logo.png" width="60" height="60" alt="logo"  class="d-inline-block align-top MiLogo">
+          Yion Pasteleria
+        </a>
+        <button class="navbar-toggler col-sm-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
+        <div class="collapse navbar-collapse text-center " id="navbarNavDropdown">
+          <ul class="navbar-nav  ml-auto">
             <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="index.html">Inicio</a>
+              <a class="nav-link"  aria-current="page" href="index.html">Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="Para regalar.html">Para Regalar</a>
@@ -41,12 +43,12 @@
               <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Postres
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="postres Veganos.html">Postres Veganos</a></li>
-                <li><a class="dropdown-item" href="PostresNormales.html">Postres Normales</a></li>
+              <ul class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+                <li class="nav-item"><a class="nav-link dropdown-item" href="postres Veganos.html">Postres Veganos</a></li>
+                <li class="nav-item"><a class="nav-link dropdown-item" href="PostresNormales.html">Postres Normales</a></li>
               </ul>
             </li>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+            <button type="button" class="btn btn-primary d-flex flex-row justify-content-center" data-toggle="modal" data-target="#exampleModalLong">
               Hace tu pedido
             </button>
           </ul>
@@ -55,20 +57,181 @@
     </nav>
 </header>
 
+
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLongTitle">Pedido</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+      <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">Numero de tarjeta</label>
+        <input type="tel" class="form-control" id="formGroupExampleInput" placeholder="xxxx-xxxx-xxxx-xxxx" maxlength="16">
+      </div>
+      <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Nahuel">
+      </div>
+      <div class="mb-3">
+        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+          <option selected>Tipo de Tarjeta</option>
+          <option value="1">Visa</option>
+          <option value="2">Visa Debito</option>
+          <option value="3">Mastercard</option>
+          <option value="4">Mastercard Credito</option>
+        </select>
+      </div>
+        <label for="formGroupExampleInput" class="form-label">Fecha de vencimiento</label>
+        <div class="d-inline p-2"><input type="number" class="form-control" id="formGroupExampleInput" placeholder="Mes"></div>
+        <div class="d-inline p-2"><input type="number" class="form-control" id="formGroupExampleInput" placeholder="Año"></div>  
+      <div class="mb-6">
+        <label for="formGroupExampleInput" class="form-label">CCV</label>
+        <input type="tel" class="form-control" id="formGroupExampleInput" placeholder="xxx" maxlength="3">
+      </div>        
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      <button type="button" class="btn btn-primary">confirmar</button>
+    </div>
+  </div>
+</div>
+</div>
   <main>
+    <!-- Esqueleto -->
+    <h1>Tortas</h1>
+    <div class=" row-cols-1 row-cols-md-2 g-2">
+      <div class="col">
+        <div class="card">
+          <img src="/img/torta1.jpeg" class="card-img-top img-fluid w-25" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Torta bomba de dulce de leche</h5>
+            <p>Ingredientes:
+              150g de chocolate semiamargo
+              200g de manteca
+              1 taza de azúcar
+              4 huevos
+              Para la cobertura:
+              1 ½ pote de Dulce de Leche Repostero
+              1 pote de Queso Crema
+              Rulos de chocolate para decorar</p>
+            <p class="card-text">Derretir el chocolate junto con la manteca. Agregar la taza de azúcar y luego agregar uno a uno los huevos. </p>
+            <p>Mezclar bien hasta unir todos los ingredientes.</p>
+            <p>Enmantecar y forrar con papel aluminio la base de un molde de 22cm.</p>
+            <p>Cocinar en horno precalentado a 200° C por 30 minutos.
+              Una vez cocida la base de chocolate, dejar reposar 15 minutos y desmoldar. Dejar enfriar.
+              Para la cobertura, mezclar con movimientos envolventes el queso crema con el dulce de leche repostero y llevar no menos de dos horas a la heladera.
+              Cubrir la torta con la crema de queso crema y dulce de leche.
+              Decorar con rulos de chocolate o hilos de chocolate.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="/img/torta2.jpeg" class="card-img-top img-fluid w-25" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Torta oreo</h5>
+            <p class="card-text">Ingredientes:</p>
+            <p>3 paquetes oreo de 180grs
+              600 grs dulce de leche repostero
+              300 grs crema de leche (bien espesa)
+              3 cucharadas cacao Nesquik (para chocolatada)
+              400 cc leche (para chocolatada).</p>
+              <p>En primer lugar preparo la chocolatada mezclo la leche con el cacao y pongo a entibiar luego dejo descansar.
+                Como no tengo molde desmontable coloco cubrielñndo totalmente su interior con papel film y que sobren orillas para luego tapar. El molde que use es de 20 cm. La torta quedo con 2.300 kg para que tengan una idea..
+                Remojo vuelta y vuekta la oreo y coloco en el molde.ñ y luego arribanuna capa de la mezcla de dulce y crema repetimos esos pasos 3.veces más y luego cubrimos y refrigeramos
+                Dejamos por una hs en el freezer, sacamos y decoramos a gusto</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="/img/torta3.jpeg" class="card-img-top img-fluid w-25" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Lemon Pie</h5>
+            <p class="card-text"> Ingredientes:</p>
+            <p>Para la masa
+              250 grs de harina
+              4 cdas de azúcar
+              120 grs de manteca
+              Ralladura de 1 limón
+              1 huevo
+              Para el relleno
+              1 huevo
+              1 taza de azúcar
+              4 cdas de fécula de maíz
+              500 cc de agua
+              Jugo de 2 limones
+              Ralladura de 1 limón
+              Para el merengue
+              4 claras
+              1/2 taza de azúcar.</p>
+              <p>Hacer la masa uniendo los ingredientes y dejar reposar media hora envuelta en papel film.
+                Estirarla, forrar una tartera redonda desmontable de 26 cm, pincharla con un tenedor y cocinar a blanco en horno precalentado moderado por 20 minutos; retirar y reservar.
+                Por otra parte, colocar en una olla los ingredientes del relleno, revolver con batidor y cocinar a fuego bajo revolviendo siempre hasta que rompa el hervor y espese.
+                Retirar, dejar que entibie y rellenar la tarta.
+                Reservar en heladera.
+                Hacer el merengue poniendo los ingredientes en un bol a baño María y cuando el azúcar se haya disuelto, retirar y poner a batir hasta conseguir un batido brilloso y firme.
+                Volcar el merengue sobre la crema, decorar como se desee y dorar apenas en la parrilla del horno o con soplete.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="/img/torta4.jpg" class="card-img-top img-fluid w-25" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Torta con frutas de estación</h5>
+            <p class="card-text">Ingredientes:</p>
+             <p>10 huevos
+              400 grs de azúcar
+              Ralladura de 1 limón
+              400 grs de harina
+              Para la crema de limón
+              4 tazas de azúcar
+              12 huevos
+              Jugo y ralladura de 2 limones
+              Para el merengue italiano
+              500 grs de azúcar
+              250 cc de claras de huevo
+              1/2 taza de agua
+              Para la cubierta
+              Frutas de estación, a gusto
+              Almíbar o jalea de
+              Manzanas, c/n.</p>
+              <p>Batir los huevos junto con el azúcar y cuando llegue a punto letra incorporarle la ralladura y la harina cernida con movimientos envolventes
+                Poner en un molde enmantecado y enharinado, y hornear el bizcochuelo a temperatura moderada por 30 minutos o hasta que al insertar un palillo, éste salga seco
+                Para la crema de limón mezclar en un bol todos los ingredientes y sobre baño María y sin dejar de revolver, cocinar hasta que al levantar el batidor se formen dibujos
+                Llevar a la heladera por 2 horas
+                Hacer el merengue batiendo las claras con la mitad del azúcar y con la otra mitad hacer un almíbar junto con el agua
+                Cuando llegue a punto bolita, incorporar en forma de hilo a las claras y seguir batiendo hasta que toda la preparación enfríe
+                Para el armado, cortar la parte superior del bizcochuelo como una tapa y hacer un hueco en el centro
+                Rellenarlo con la crema de limón, colocar la tapa del bizcochuelo al revés para que quede plana la superficie, untar con un poco de la crema y con manga de boquilla risada, decorar el contorno con el merengue
+                Finalmente, sobre la superficie disponer todas las frutas cortadas de manera vistosa y con el almíbar o jalea pintarlas para que queden brillosas
+                </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- footer -->
     <div class="fondo_gnral footer">
+ 
       <footer>
         <p><b>Siguenos en:</b></p>
           
-            <a href="" target="_blank"><img src="../html/Multimedia/img/facebook.png" alt="Facebook" class="footer-redes"></a>
-            <a href="https://www.instagram.com/yionpasteleria/" target="_blank"><img src="../html/Multimedia/img/instagram.png" alt="instagram" class="footer-redes"></a>
-            <a href="" target="_blank"><img src="../html/Multimedia/img/Whatsapp.png" alt="Whatsapp" class="footer-redes"></a>
-            <a href="https://mail.google.com/mail/u/0/?hl=es-419#inbox target="_blank"><img src="../html/Multimedia/img/gmail.png" alt="Correo Electronico" class="footer-redes"></a>
-          
-        <p>Derechos reservados© yion Pasteleria</p>
+            <a href="https://www.facebook.com/dolores.vidal.7792" target="_blank"><img src="/img/facebook.png" alt="Facebook" class="footer-redes"></a>
+            <a href="https://www.instagram.com/yionpasteleria/" target="_blank"><img src="/img/instagram.png" alt="instagram" class="footer-redes"></a>
+            <a href="https://tinyurl.com/c3t3xeps" target="_blank"><img src="/img/Whatsapp.png" alt="Whatsapp" class="footer-redes"></a>   
+            <br>        
+            <a><img src="/img/gmail.png" alt="gmail" class="footer-redes"> yimmydo52@gmail.com</a>
+            <a><img src="/img/phone.png" alt="phone" class="footer-redes"> Tel:341 314-0989</a>  
+            <br>   
+        <p class="lead">Derechos reservados© yion Pasteleria</p>
       </footer>
-</div>        
+    </div>        
   </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script> 
 </body>
