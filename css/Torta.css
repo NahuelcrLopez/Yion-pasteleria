@@ -10,7 +10,7 @@
 }
 
   /* Fondo del header */
-.header_Container, li, ul, a
+.HeaderContainer, li, ul, a
 {
     background-color: #FFACBE !important;
   }
@@ -45,7 +45,7 @@ h1, h2,h3 {
   }
 
 /* footer fuente y centrado */
-.fondo_gnral footer {
+.FondoGnral footer {
     border-top: solid 2px black;
     background-color: #FFACBE;
     text-align: center;
